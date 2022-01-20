@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+    :root{
+        --color-main-bg:hsl(222, 26%, 31%);
+        --color-toggle-bg:hsl(223, 31%, 20%);
+        --color-screen-bg:hsl(224, 36%, 15%);
+        --color-fnkeys-bg:hsl(225, 21%, 49%);
+        --color-fnkeys-shadow:hsl(224, 28%, 35%);
+        --color-eqkey-bg:hsl(6, 63%, 50%);
+        --color-eqkey-shadow:hsl(6, 70%, 34%);
+        --color-key-bg:hsl(30, 25%, 89%);
+        --color-key-shadow:hsl(28, 16%, 65%);
+        --color-key:hsl(221, 14%, 31%);
+        --color-title:hsl(100,100%,100%);
+        --color-theme:hsl(100,100%,100%);
+        --color-del:hsl(100,100%,100%);
+        --color-reset:hsl(100,100%,100%);
+        --color-eq:hsl(100,100%,100%);
+        --color-result:hsl(100,100%,100%);
+        
+    }
+    .theme-two{
+        --color-main-bg:hsl(0, 0%, 90%);
+        --color-toggle-bg:hsl(0, 5%, 81%);
+        --color-screen-bg:hsl(0, 0%, 94%);
+        --color-fnkeys-bg:hsl(185, 42%, 37%);
+        --color-fnkeys-shadow:hsl(185, 58%, 25%);
+        --color-eqkey-bg:hsl(25, 98%, 40%);
+        --color-eqkey-shadow:hsl(25, 99%, 27%);
+        --color-key-bg:hsl(45, 7%, 89%);
+        --color-key-shadow:hsl(35, 11%, 61%);
+        --color-key:hsl(60, 10%, 19%);
+        --color-title:hsl(60, 10%, 19%);
+        --color-theme:hsl(60, 10%, 19%);
+        --color-del:hsl(100,100%,100%);
+        --color-reset:hsl(100,100%,100%);
+        --color-eq:hsl(100,100%,100%);
+        --color-result:hsl(60, 10%, 19%);
+    }
+    .theme-three{
+        --color-main-bg:hsl(268, 75%, 9%);
+        --color-toggle-bg:hsl(268, 71%, 12%);
+        --color-screen-bg:hsl(268, 71%, 12%);
+        --color-fnkeys-bg:hsl(281, 89%, 26%);
+        --color-fnkeys-shadow:hsl(285, 91%, 52%);
+        --color-eqkey-bg:hsl(176, 100%, 44%);
+        --color-eqkey-shadow:hsl(177, 92%, 70%);
+        --color-key-bg:hsl(268, 47%, 21%);
+        --color-key-shadow:hsl(285, 91%, 52%);
+        --color-key:hsl(52, 100%, 62%);
+        --color-title:hsl(52, 100%, 62%);
+        --color-theme:hsl(52, 100%, 62%);
+        --color-del:hsl(100,100%,100%);
+        --color-reset:hsl(100,100%,100%);
+        --color-eq:hsl(198, 20%, 13%);
+        --color-result:hsl(52, 100%, 62%);
+    }
+
+
+
+  .btn {
+    @apply text-3xl shadow-key-shadow shadow-sm cursor-pointer text-key grid place-content-center bg-key-bg p-4 rounded-lg;
+  }
+
+
+.left{
+  left: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.middle{
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.right{
+  right: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

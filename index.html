@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <script type="module" src="./src/js/index.js"></script>
+    <title>Calculator App</title>
+  </head>
+  <body class="font-spartan px-[5vw] desktop:px-[10vw] bg-main-bg">
+    <div class="wrapper desktop:max-w-[30rem] mx-auto desktop:translate-y-[10%] pb-10 ">
+      <header class="flex items-center mt-10 justify-between">
+        <h1 class="text-4xl text-title">calc</h1>
+        <div class="theme-switcher flex items-center gap-5">
+          <h2 class="text-lg text-theme">THEME</h2>
+          <div class="toggle relative cursor-pointer bg-toggle-bg w-20 h-7 rounded-full flex ">
+            <span class="ball w-[1rem] h-[1rem] absolute top-1/2 -translate-y-1/2 bg-eqkey-bg rounded-full"></span>
+            <span class="spans first flex-1"></span>
+            <span class="spans second flex-1"></span>
+            <span class="spans third flex-1"></span>
+          </div>
+        </div>
+      </header>
+      <div class="screen text-result bg-screen-bg my-10 py-10 rounded-lg flex justify-end text-3xl px-5"></div>
+      <div class="body rounded-lg bg-toggle-bg grid grid-cols-4 gap-4 p-10">
+        <div class="btn keynumber key7">7</div>
+        <div class="btn keynumber key8">8</div>
+        <div class="btn keynumber key9">9</div>
+        <div class="keydel bg-fnkeys-bg shadow-fn-shadow shadow-md text-del cursor-pointer rounded-lg text-xl grid place-content-center key4">DEL</div>
+        <div class="btn keynumber key4">4</div>
+        <div class="btn keynumber key5">5</div>
+        <div class="btn keynumber key6">6</div>
+        <div class="btn ops keyplus">+</div>
+        <div class="btn keynumber key1">1</div>
+        <div class="btn keynumber key2">2</div>
+        <div class="btn keynumber key3">3</div>
+        <div class="btn ops keysubs">-</div>
+        <div class="btn ops keydot">.</div>
+        <div class="btn keynumber key0">0</div>
+        <div class="btn ops keydiv">/</div>
+        <div class="btn ops keymult">*</div>
+        <div class="keyreset cursor-pointer text-reset shadow-fn-shadow shadow-md bg-fnkeys-bg py-5 rounded-lg text-2xl grid place-content-center key17 col-span-2">RESET</div>
+        <div class="keyeq cursor-pointer shadow-eq-shadow shadow-md text-eq key18 rounded-lg bg-eqkey-bg grid place-content-center text-2xl col-span-2">=</div>
+      </div>
+    </div>
+  </body>
+</html>
